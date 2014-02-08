@@ -8,8 +8,30 @@
 Le mettre dans le dossier, \
 dans le terminal, faire : \
 get add fichier.ext\
-get commit -m \'ab\'a0nom_voulu\'a0\'bb\
+get commit -m \'ab\'a0Nom_changement \'bb\
+\
+Pour le mettre sur le serveur: \
 get push origin master\
 \
 Pour chercher les update:\
-get pull}
+get pull\
+\
+Lorsqu\'92on ajoute un fichier dans le dossier, dans le logiciel, il faut aller dans l\'92onglet \'ab\'a0 changes\'a0\'bb . De l\'e0, on peut mettre un titre au commit li\'e9 au fichier (en le s\'e9lectionnant en dessous), et une description un peu plus pouss\'e9e.\
+Il faut savoir que les suppression sont en rouge (avec un - devant), et que les ajouts sont en vert  (avec un + devant) \
+Si changement sur une ligne qui existait d\'e9j\'e0, il y a en plus l\'92ajout en vert plus fonc\'e9.\
+\
+On peut cr\'e9er une autre branche si on ne veut pas modifier tout le programme qui marche d\'e9j\'e0. \
+Pour cela, il faut aller dans l\'92onglet \'ab\'a0Branches\'a0\'bb et cliquer sur le petit +, et cliquer sur Publish pour le publier en ligne \
+On peut double cliquer sur celle avec laquelle on veut travailler.\
+\
+Pour fusionner les deux branches (ramener la branche cr\'e9\'e9e vers la brancher master), cliquer sur Merge View en haut \'e0 droite.  Glisser la premi\'e8re branche (qui a donc \'e9t\'e9 modifi\'e9) dans la premi\'e8re case, et la branche master dans la deuxi\'e8me case. Ensuite, cliquer sur merge branches.\
+\
+Si on a modifi\'e9 les deux, il y a alors un conflit  \'ab\'a0merge conflit\'a0\'bb, il y aura dans le fichier dans lequel il y a un conflit la ligne <<<<< HEAD qui correspond au fichier contenu dans master\
+et ensuite la ligne >>>>> branche qui correspond au fichier contenu dans la branche branche \
+Ces deux lignes sont s\'e9par\'e9es avec des ===============\
+\
+Dans ce cas l\'e0, il faut modifier le fichier directement, puis aller dans la console, rajouter le fichier avec la commande : \
+git add fichier.ext\
+git commit -m \'91nom du commit\'92\
+\
+On verra dans l\'92onglet \'ab\'a0History\'a0\'bb les lignes gard\'e9es (en blanc) et les lignes supprim\'e9es (en rouge). }
